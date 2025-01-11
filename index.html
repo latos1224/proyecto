@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resolver ecuaciones y raíces</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Resolver ecuaciones y raíces</h1>
+    </header>
+
+    <nav class="nav">
+      <button class="nav-button active" data-type="linear">Lineales</button>
+      <button class="nav-button" data-type="quadratic">Cuadráticas</button>
+      <button class="nav-button" data-type="square-root">Raíz Cuadrada</button>
+      <button class="nav-button" data-type="cubic-root">Raíz Cúbica</button>
+    </nav>
+
+    <main class="main">
+      <p>Selecciona el tipo de cálculo e ingresa los datos:</p>
+      <form id="equation-form">
+        <input 
+          type="text" 
+          id="equation" 
+          class="input" 
+          placeholder="Ejemplo: 25 para raíces" 
+          required
+        >
+        <button type="submit" class="btn">Resolver</button>
+      </form>
+
+      <section id="steps-container" class="steps-container hidden">
+        <h2>Pasos:</h2>
+        <div id="steps" class="steps"></div>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
